@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Flash Cards</h1>
+</head>
+<body>
+    <style>
+        .cardsButton {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #cards {
+            width: 300px;
+            height: 105px;
+            font-size: 30px;
+            background-color: mistyrose;
+            text-align: center;
+        }
+    </style>
+    <button class="cardsButton" onclick="Cards(event)" data-answer="Indianapolis.">What is the capital of Indiana?</button>
+
+    <button class="cardsButton" onclick="Cards(event)" data-answer="Survivors aren't buried.">If a plane crashes on the border between the United States and Canada, where do they bury the survivors?</button>
+
+    <button class="cardsButton" onclick="Cards(event)" data-answer="No, but since he is dead it would be hard to do so.">Is it legal for a man to marry his widow’s sister?</button>
+
+    <div id="cards"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
