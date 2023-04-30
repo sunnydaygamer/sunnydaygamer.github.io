@@ -4,65 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory</title>
+    <title>Tic Tac Toe</title>
+    <header>Tic Tac Toe</header>
 </head>
 <body>
-    <div id="playArea" style="text-align: center;">
-        <!-- 1 = orange -->
-        <div class="card" id="one" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="orange"></div>
-
-        <!-- 2 = purple -->
-        <div  class="card" id="two" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="purple"></div>
-
-        <!-- 3 = blue -->
-        <div  class="card" id="three" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="blue"></div>
-
-        <!-- 4 = pink -->
-        <div  class="card" id="four" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="pink"></div>
-
-        <br>
-
-        <!-- 5 = pink -->
-        <div  class="card" id="five" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="pink"></div>
-
-        <!-- 6 = purple -->
-        <div  class="card" id="six" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="purple"></div>
-
-        <!-- 7 = red -->
-        <div  class="card" id="seven" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="red"></div>
-
-        <!-- 8 = orange -->
-        <div  class="card" id="eight" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="orange"></div>
-
-        <br>
-
-        <!-- 9 = brown -->
-        <div  class="card" id="nine" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="brown"></div>
-
-        <!-- 10 = green -->
-        <div  class="card" id="ten" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="green"></div>
-
-        <!-- 11 = green -->
-        <div  class="card" id="eleven" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="green"></div>
-
-        <!-- 12  = yellow -->
-        <div  class="card" id="twelve" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="yellow"></div>
-
-        <br>
-
-        <!-- 15 = blue -->
-        <div  class="card" id="thirteen" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="blue"></div>
+    <style>
+        header {
+            color: white;
+            font-size: 70px;
+            margin-left: 70px;
+        }
+        td {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            font-size: 100px;
+        }
+    </style>
+</body>
+<table border="5"
+bgcolor = "white"
+>
+    <tr>
+        <td onclick="place(this)"></td>
+        <td onclick="place(this)"></td>
+        <td onclick="place(this)"></td>
+    </tr>
+    <tr>
+        <td onclick="place(this)"></td>
+        <td onclick="place(this)"></td>
+        <td onclick="place(this)"></td>
+    </tr>
+    <tr>
+        <td onclick="place(this)"></td>
+        <td onclick="place(this)"></td>
+        <td onclick="place(this)"></td>
         
-        <!-- 14 = brown -->
-        <div  class="card" id="fourteen" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="brown"></div>
-
-        <!-- 15 = red -->
-        <div  class="card" id="fifteen" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="red"></div>
-
-        <!-- 16 = yellow -->
-        <div class="card" id="sixteen" style="height: 300px; width: 200px; background-color:black; margin: 20px; display: inline-block;" data-color="yellow"></div>
-    </div>
+    </tr>
+    <body style="background-color: indigo;">
 
     <script src="js/app.js"></script>
-</body>
+    </script>
+</table>
 </html>
